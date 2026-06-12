@@ -245,6 +245,7 @@
             margin-bottom: 8px;
             /*animation: iconBounce 2.5s ease-in-out infinite;*/
         }
+        .cover-icon img { width: 91px; height: auto; }
         @keyframes iconBounce {
             0%,
             100% {
@@ -651,6 +652,7 @@
             z-index: 1;
             /*animation: iconBounce 2.5s ease-in-out infinite;*/
         }
+        .end-icon img { width: 91px; height: auto; }
         .page-end h2 {
             font-size: 22px;
             color: #fff;
@@ -778,7 +780,7 @@
         }
 
         /* ========== 音乐按钮 ========== */
-        .music-btn {
+        /*.music-btn {
             position: absolute;
             top: 18px;
             top: calc(18px + env(safe-area-inset-top, 0px));
@@ -799,7 +801,7 @@
             -webkit-tap-highlight-color: transparent;
             backdrop-filter: blur(6px);
             -webkit-backdrop-filter: blur(6px);
-        }
+        }*/
         .music-btn:active {
             transform: scale(0.9);
         }
@@ -1050,7 +1052,7 @@
 
     <div class="invitation-wrapper" id="invitationWrapper">
         <!-- 音乐按钮 -->
-        <button class="music-btn" id="musicBtn" aria-label="背景音乐" title="点击播放音乐">🎵</button>
+        <!--<button class="music-btn" id="musicBtn" aria-label="背景音乐" title="点击播放音乐">🎵</button>-->
 
         <!-- 页面轨道 -->
         <div class="pages-track" id="pagesTrack">
@@ -1063,7 +1065,7 @@
                 <div class="cover-decoration">
                     <div class="cover-line-top"></div>
                     <div class="cover-icon">
-                        <img src="logo.gif" alt="这是一个校徽">
+                        <img src="logo-gold.png" alt="这是一个校徽">
                     </div>
                     <div class="cover-label">GRADUATION · 2026</div>
                     <h1 class="cover-title">
@@ -1191,7 +1193,7 @@
             <!-- ==================== 第6页：结尾 + RSVP ==================== -->
             <div class="page page-end" data-page="5">
                 <div class="end-icon">
-                    <img src="logo.gif" alt="这是一个校徽">
+                    <img src="logo-white.png" alt="这是一个校徽">
                 </div>
                 <h2>感谢有您</h2>
                 <p class="thanks-text">
@@ -1606,7 +1608,7 @@
             musicBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 toggleMusic();
-            });
+            }); 
 
             // RSVP按钮
             rsvpBtn.addEventListener('click', (e) => {
